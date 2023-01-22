@@ -1,0 +1,7 @@
+.app-sidebar {
+  width: 0px !important;
+  min-width: 0px !important;
+}
+.fixed-sidebar .app-main .app-main__outer {
+  padding-left: 0px !important;
+}
