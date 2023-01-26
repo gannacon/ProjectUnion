@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CustomThreads</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="CUSTOMTHREADS FREESTYLE LANDING PAGE DOMAIN PAGE"
+    />
+
+    <link href="style.css" rel="style" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div>
+      <link href="style.css" rel="style" type="text/css" />
+
+      <div class="app-main">
+        <div class="app-main__outer">
+          <div class="app-main__inner">
+            <div class="tab-content">
+              <style>
+                @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+                @font-face {
+                  font-family: "Anton", sans-serif;
+                  src: url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+                }
+                @font-face {
+                  font-family: "Anton", sans-serif;
+                  src: url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+                }
+                *,
+                ::after,
+                ::before {
+                  box-sizing: border-box;
+                }
+                .categoryContainer {
+                  margin: auto;
+                  padding: 16px;
+                }
+                .categoryContainer .row {
+                  display: flex;
+                  flex-wrap: wrap;
+                  margin-left: -15px;
+                  margin-right: -15px;
+                }
+                .categoryContainer .col {
+                  position: relative;
+                  width: 100%;
+                  padding-left: 15px;
+                  padding-right: 15px;
+                  flex-basis: 0;
+                  flex-grow: 1;
+                  max-width: 100%;
+                }
+                .categoryContainer .categoryBox {
+                  margin: 16px 0;
+                  position: relative;
+                  text-align: center;
+                  overflow: hidden;
+                }
+                .categoryContainer .categoryBox::before {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: #222222;
+                  transition: 0.5s;
+                  opacity: 0;
+                  z-index: 2;
+                }
+                .categoryContainer .categoryBox img {
+                  width: 100%;
+                  vertical-align: middle;
+                  border-style: none;
+                  transition: 0.5s;
+                  max-height: 465px;
+                  height: 465px;
+                  object-fit: contain;
+                }
+                .categoryContainer .categoryBox .categoryContent {
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 0;
+                  right: 0;
+                  margin: 0 auto;
+                  padding: 0 8px;
+                  z-index: 3;
+                }
+                .categoryContainer .categoryBox .categoryContent h3,
+                .categoryContainer .categoryBox .categoryContent .btn {
+                  font-family: "Anton", sans-serif;
+                }
+                .categoryContainer .categoryBox:hover img,
+                .categoryContainer .categoryBox:focus img {
+                  transform: scale(1.1);
+                }
+                .categoryContainer .categoryBox .categoryContent h3 {
+                  color: #ffffff;
+                  font-size: 36px;
+                  font-weight: 700;
+                  margin-top: 0;
+                  margin-bottom: 0.5rem;
+                  font-weight: 500;
+                  line-height: 1.2;
+                }
+                .categoryContainer .categoryBox .categoryContent .btn {
+                  display: inline-block;
+                  font-weight: 400;
+                  color: #212529;
+                  text-align: center;
+                  vertical-align: middle;
+                  user-select: none;
+                  background-color: transparent;
+                  border: 1px solid transparent;
+                  padding: 0.375rem 0.75rem;
+                  margin-top: 25px;
+                  font-size: 20px;
+                  line-height: 1.5;
+                  border-radius: 0.25rem;
+                  transition: color 0.15s ease-in-out,
+                    background-color 0.15s ease-in-out,
+                    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                  color: #f8f9fa;
+                  border-color: #f8f9fa;
+                }
+                .categoryContainer .categoryBox .categoryContent a {
+                  color: #007bff;
+                  text-decoration: none;
+                  background-color: transparent;
+                }
+                @media (min-width: 576px) {
+                  .categoryContainer {
+                    max-width: 540px;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .categoryContainer {
+                    max-width: 720px;
+                  }
+                }
+                @media (min-width: 992px) {
+                  .categoryContainer {
+                    max-width: 960px;
+                  }
+                }
+                @media (min-width: 1200px) {
+                  .categoryContainer {
+                    max-width: 1140px;
+                  }
+                }
+                @media (min-width: 1300px) {
+                  .categoryContainer {
+                    max-width: 1280px;
+                  }
+                }
+                @media (min-width: 1400px) {
+                  .categoryContainer {
+                    max-width: 1360px;
+                  }
+                }
+                @media (min-width: 1500px) {
+                  .categoryContainer {
+                    max-width: 1460px;
+                  }
+                }
+                @media (min-width: 1600px) {
+                  .categoryContainer {
+                    max-width: 1560px;
+                  }
+                }
+                @media (min-width: 1700px) {
+                  .categoryContainer {
+                    max-width: 1660px;
+                  }
+                }
+                @media (min-width: 1800px) {
+                  .categoryContainer {
+                    max-width: 1760px;
+                  }
+                }
+                @media (min-width: 1900px) {
+                  .categoryContainer {
+                    max-width: 1860px;
+                  }
+                }
+                @media (min-width: 2000px) {
+                  .categoryContainer {
+                    max-width: 1960px;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .categoryContainer .col {
+                    flex: 0 0 33.333333%;
+                    max-width: 33.333333%;
+                  }
+                }
+                @media (max-width: 767.98px) {
+                  .categoryContainer .col {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                  }
+                  .categoryContainer {
+                    width: 100%;
+                  }
+                  .categoryContainer .categoryBox img {
+                    height: 100%;
+                  }
+                }
+                @media screen and (min-width: 768px) and (max-width: 991.98px) {
+                  .categoryContainer .categoryBox .categoryContent h3 {
+                    font-size: 25px;
+                  }
+                  .categoryContainer .categoryBox .categoryContent .btn {
+                    margin-top: 15px;
+                    font-size: 15px;
+                  }
+                  .categoryContainer .categoryBox img {
+                    height: 100%;
+                  }
+                }
+              </style>
+              <!-- CATEGORY ARRAY -->
+              <div class="categoryContainer">
+                <div class="row">
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=baseball"
+                        target="_parent"
+                        ><img
+                          src="https://static.wixstatic.com/media/f595f9_ccf00c18534241318b48a33b44e64ed4~mv2.png"
+                          alt="Baseball"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=basketball"
+                        target="_parent"
+                        ><img
+                          src="https://static.wixstatic.com/media/f595f9_27ba0c6fded1452aad16431e1c1c15f2~mv2.png"
+                          alt="Basketball"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=soccer"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/media/f595f9_1195ba2acf5f47afa7788393a12013b8~mv2.png"
+                          alt="Soccer"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=football"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/media/f595f9_96eec1ed9efe4e45aaf7ae6a49727f5c~mv2.png"
+                          alt="Football"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=fleece"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/media/f595f9_cec5393ba5994ffc97af3550200296f2~mv2.png"
+                          alt="Fleece"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=track"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/media/f595f9_2f8ec18c73ca432e87d37487df5dc57a~mv2.png"
+                          alt="Track"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=training"
+                        target="_parent"
+                        ><img
+                          src="https://static.wixstatic.com/media/f595f9_d5366ad140c74eb581c8716a6abfa7a1~mv2.png"
+                          alt="Training"
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=polo"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/media/f595f9_447539120ec2453bb2f1a0632d6e17f1~mv2.png"
+                          alt="Polos"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=fanwear"
+                        target="_parent"
+                        ><img
+                          src="https://static.wixstatic.com/media/f595f9_940ca7bfefb0492ca0af132459dbeed8~mv2.png"
+                          alt="Fanwear"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=lacrosse"
+                        target="_parent"
+                        ><img
+                          src="https://static.wixstatic.com/media/f595f9_d0ced0d173dd461e8d2a9355854d5bd9~mv2.png"
+                          alt="Lacrosse"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=volleyball"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/media/f595f9_22d70d07d6e1464a8dbfdd1196a4eca1~mv2.png"
+                          alt="Volleyball"
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=accessories"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/media/f595f9_d7dc0c5340e14359b80985eaba7f618c~mv2.png"
+                          alt="Masks, Gaiters, & ACCS"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=softball"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/media/f595f9_be9314065ce146a885b0c4949c47ebec~mv2.png"
+                          alt="Softball"
+                        />
+                      </a>
+                      <div class="categoryContent">
+                        <h3>Softball</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=5-day-turbo"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.wixstatic.com/shapes/0a1fac_2736b259d35540c1902c92d6651ff024.svg"
+                          alt="Turbo"
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=babe-ruth-turbo"
+                        target="_parent"
+                        ><img
+                          src="https://static.augustasportswear.com/plugin-sublimation/baby-ruth.jpg"
+                          alt="Babe Ruth Turbo"
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=compression"
+                        target="_parent"
+                        ><img
+                          src="https://static.augustasportswear.com/plugin-sublimation/compression.jpg"
+                          alt="Compression"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="categoryBox">
+                      <a
+                        href="https://www.customthreadstx.com/configurator?categoryName=semi-sublimated"
+                        target="_parent"
+                      >
+                        <img
+                          src="https://static.augustasportswear.com/plugin-sublimation/Semi-Sub.jpg"
+                          alt="Semi Sublimated"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="categoryBox">
+                    <a
+                      href="https://www.customthreadstx.com/capconfigurator"
+                      target="_parent"
+                    >
+                      <img
+                        src="https://static.wixstatic.com/media/f595f9_81602acf73f0420f9454c9fe21c44159~mv2.gif"
+                        alt="headwear"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
